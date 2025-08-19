@@ -1,5 +1,5 @@
 import { GitHub, LinkedIn } from "./Pills/SocialPills"
-/*orden de propiedades para los enlaces*/
+/*orden de propiedades para los enlaces de redes sociales*/
 /*link - name - color*/
 
 export function Hero(){

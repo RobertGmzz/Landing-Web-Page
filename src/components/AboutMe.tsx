@@ -23,13 +23,12 @@ export function AboutMe(){
                 </div>
                 <img src="/img/icono.png" alt="foto de robert" loading="lazy" className="size-50 lg:size-70 mb-4 mx-4 border-2 rounded-2xl rotate-4"/>
             </article>
-            <div className="flex-col">
+            <div className="flex-col mb-2">
                 <h3 className="text-center"><span>more networks</span></h3>
-                <ul className="flex flex-wrap justify-center sm:justify-start gap-3 pt-4">
+                <ul className="flex flex-wrap justify-center gap-3 pt-4">
                     <li><X link="#" name="Twitter" color="currentColor"></X></li>
                 </ul>
             </div>
-            
         </section>
     )
 }
