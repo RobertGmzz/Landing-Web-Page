@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* FUENTE ROBOTO */
+
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v48-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v48-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/roboto-v48-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    /*Agrega la fuente importada, en caso de no funcionar, carga las demas*/
+    font-family: 'Roboto', sans-serif, 'Montserrat';
+    /*Agrega suavidad al scroll*/
+    scroll-behavior: smooth;
+}
+
+/*Respeta la configuracion de usuario para scroll*/
+@media (prefers-reduced-motion: reduce) {
+    html{
+        scroll-behavior: auto;
+    }
+}
+
+/*Reset de estilos por defecto del body*/
+body{
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+/*Centrar contenido de pagina*/
+#root {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    min-height: 100dvh;
+}
+
+/*Light mode*/
+:root{
+    background-color: #FFFFFF;
+    text-decoration-color: #000000;
+}
+
+/*Dark mode*/
+:root.dark{
+    @apply bg-[#1B1B1F] text-[#FFFFFF]
+}
+
+/*Variante para dark mode*/
+@custom-variant dark (&:is(.dark *));
+
+/*Variables para estilos*/
+@theme{
+    --color-principal: #364153;
+}
+
+/*Estilos de los elementos que reciban la clase active de intersectionObserver*/
+nav a.active{
+    color: red;
+}
+
+/*Margen del scroll-top para links a la misma pagina*/
+section, main, footer{
+    scroll-margin-top: 100px;
+}
+
+@media (max-width: 640px) {
+    section, main, footer{
+        scroll-margin-top: 76px;
+    }
+}
+
