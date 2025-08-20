@@ -1,24 +1,27 @@
 import type { ReactNode }  from "react"
 
-type image = {
-    ruta: string
+type props = {
+    title: string
+    description: string
+    route: string
     children: ReactNode
+    link: string
 }
 
 
-export function Work({ruta, children}:image){
+export function Work({title, description, route, children, link}:props){
     return(
-        <article className="flex flex-col gap-4 w-70 sm:w-100 p-4 border rounded-2xl">
-            <div className="border rounded-2xl overflow-hidden">
-                <img src={ruta} alt="captura de proyecto" loading="lazy" className="object-cover"/>
-            </div>
+        <article className="flex flex-col gap-4 w-70 sm:w-100 p-4 rounded-2xl shadow-primary">
+            <a href={link} aria-label="Ver proyecto" title="Abrir proyecto" target="_blank" rel="noopener noreferrer" className="rounded-2xl overflow-hidden shadow-primary">
+                <img src={route} alt="captura de proyecto" loading="lazy" className="object-cover transition duration-500 hover:scale-110"/>
+            </a>
             <div>
-                <h3>titulo</h3>
+                <h3>{title}</h3>
                 <p>
-                    Pequeñisima descripcion, adipisicing elit.
+                    {description}
                 </p>
                 <footer>
-                    <ul className="flex gap-2 pt-4">
+                    <ul className="flex flex-wrap gap-2 pt-4">
                         {children}
                     </ul>
                 </footer>

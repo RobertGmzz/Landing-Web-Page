@@ -22,7 +22,7 @@ export function Footer() {
     }
 
     return (
-        <footer id="contact" className="flex flex-col items-center w-75 sm:w-150 lg:w-220 p-5 mb-4 border rounded-2xl">
+        <footer id="contact" className="flex flex-col items-center w-75 sm:w-150 lg:w-220 p-5 mb-4 rounded-2xl shadow-primary">
         <div className="flex flex-col items-center sm:items-start sm:flex-row gap-5 lg:gap-10">
             <h3 className="pt-4 w-60 sm:w-77 text-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa vero
@@ -51,20 +51,20 @@ export function Footer() {
                 name="name"
                 placeholder="Tu nombre..."
                 required
-                className="p-2 w-full border rounded-xl"
+                className="p-2 w-full  rounded-xl outline-0 shadow-secondary"
             />
             <input
                 type="email"
                 name="email"
                 placeholder="Tu correo..."
                 required
-                className="p-2 w-full border rounded-xl"
+                className="p-2 w-full rounded-xl outline-0 shadow-secondary"
             />
             <textarea
                 name="message"
                 placeholder="Tu mensaje..."
                 required
-                className="p-2 w-full h-20 border rounded-xl"
+                className="p-2 w-full min-h-30 rounded-xl outline-0 shadow-secondary"
             ></textarea>
 
             {/* Verificacion y estilos del mensaje */}
@@ -74,14 +74,14 @@ export function Footer() {
 
             <button
                 type="submit"
-                className="w-20 p-2 border rounded-xl text-sm">
+                className="w-20 p-2 rounded-xl text-sm shadow-button">
                 Enviar
             </button>
             </form>
         </div>
         <div className="flex mt-5 justify-between w-full text-sm">
-            <a href="#">©autor</a>
-            <a href="#hero">back to hero</a>
+            <a translate="no" href="#" rel="noopener noreferrer" className="hover:underline">©autor</a>
+            <a href="#hero" className="hover:underline">comeback</a>
         </div>
         </footer>
     )

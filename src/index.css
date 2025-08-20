@@ -65,16 +65,11 @@ body{
 
 /*Dark mode*/
 :root.dark{
-    @apply bg-[#1B1B1F] text-[#FFFFFF]
+    @apply bg-[#1B1B1F] text-[#FFFFFF] 
 }
 
 /*Variante para dark mode*/
 @custom-variant dark (&:is(.dark *));
-
-/*Variables para estilos*/
-@theme{
-    --color-principal: #364153;
-}
 
 /*Estilos de los elementos que reciban la clase active de intersectionObserver*/
 nav a.active{
@@ -92,3 +87,38 @@ section, main, footer{
     }
 }
 
+/*VARIABLES GLOBALES*/
+:root{
+    --shadow-primary: #252525;
+    --shadow-secondary: #252525;
+    --shadow-button: #252525;
+}
+
+/*Para dark mode*/
+.dark{
+    --shadow-primary: #000000;
+    --shadow-secondary: #000000;
+    --shadow-button: #000000;
+}
+
+/*Uso de variables*/
+.shadow-primary{
+    box-shadow: 1px 1px 4px var(--shadow-primary);
+}
+
+.shadow-primary:hover{
+    box-shadow: 1px 1px 6px var(--shadow-primary);
+}
+
+.shadow-secondary{
+    box-shadow: 0 1px 4px var(--shadow-secondary) inset;
+}
+
+.shadow-button{
+    box-shadow: 1px 1px 2px var(--shadow-button);
+    cursor: pointer;
+}
+
+.shadow-button:hover{
+    box-shadow: 1px 1px 3px var(--shadow-button);
+}
