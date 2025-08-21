@@ -28,8 +28,8 @@ export function ProjectSection(){
                         <NodeJsIcon></NodeJsIcon>
                     </Work>
 
-                
             </div>
         </section>
     )
 }
+

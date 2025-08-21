@@ -1,6 +1,6 @@
 import { ToggleTheme } from "./ToggleTheme"
 import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, CirclePower } from "lucide-react"
 
 export function Header(){
     const [isOpen, setIsOpen] = useState(false)
@@ -29,18 +29,15 @@ export function Header(){
     return (
         <header className="fixed z-10 flex flex-col w-80 sm:w-154 lg:w-224 mt-2 p-4 rounded-2xl bg-[#FFFFFF]/50 dark:bg-[#1B1B1F]/50 backdrop-blur-md shadow-primary">
             <div className="flex justify-between items-center gap-20 sm:gap-50">
-                <div className="flex items-center">
-                <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]">
-                </span>
-                <div className="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-green-800 bg-[#ffffff] rounded-full dark:bg-[#1B1B1F] dark:text-white/80 backdrop-blur-3xl whitespace-nowrap">Status
+                <div className="flex flex-nowrap gap-x-2 text-lime-500 dark:text-lime-500">
+                    <CirclePower></CirclePower>
+                    <h3>status</h3>
                 </div>
-            </span>
-        </div>
+                
 
                 <nav className="flex gap-2">
                     <ToggleTheme></ToggleTheme>
-                    <button onClick = {() => isMobile && setIsOpen(prev => !prev)} className="sm:hidden" aria-label="Toggle button">
+                    <button onClick = {() => isMobile && setIsOpen(prev => !prev)} className="sm:hidden cursor-pointer" aria-label="Toggle button">
                         {isOpen ? <X></X> : <Menu></Menu>}
                     </button>
                 </nav>

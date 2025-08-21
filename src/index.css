@@ -89,13 +89,20 @@ section, main, footer{
 
 /*VARIABLES GLOBALES*/
 :root{
+
+    /*sombras*/
     --shadow-primary: #252525;
     --shadow-secondary: #252525;
     --shadow-button: #252525;
+
+    /*colores*/
+    --color-var: #48e;
 }
 
 /*Para dark mode*/
 .dark{
+
+    /*sombras*/
     --shadow-primary: #000000;
     --shadow-secondary: #000000;
     --shadow-button: #000000;
@@ -122,3 +129,38 @@ section, main, footer{
 .shadow-button:hover{
     box-shadow: 1px 1px 3px var(--shadow-button);
 }
+
+/*Clase para efecto reflejo */
+.reflex {
+    background: var(--color-var);
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.reflex::after {
+    content: "";
+    position: absolute;
+    inset: -20% -60%;
+    pointer-events: none;
+    background: linear-gradient(
+        110deg,
+        transparent 0%,
+        rgba(255,255,255,0) 35%,
+        rgba(255,255,255,0.6) 50%,
+        rgba(255,255,255,0) 65%,
+        transparent 100%
+    );
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.reflex:hover::after {
+    animation: shine-sweep 0.7s linear;
+    opacity: 1;
+}
+
+@keyframes shine-sweep {
+    to { transform: translateX(100%); }
+}
+

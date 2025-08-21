@@ -13,7 +13,7 @@ export function Hero(){
                 </div>
             </div>
             <div className="flex-1/2 flex flex-col p-5 w-77 pt-8 sm:items-stretch text-center sm:text-start">
-                <h1>
+                <h1 className="text-2xl">
                     Hello everyone
                 </h1>
                 <h3>Here’s Who I am & What I do.</h3>
