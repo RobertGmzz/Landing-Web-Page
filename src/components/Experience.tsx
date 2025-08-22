@@ -2,7 +2,7 @@ import { Job } from "./Job"
 
 export function Experience(){
     return (
-        <main id="experience" className="flex flex-col items-center p-5 w-75 sm:w-150 lg:w-220 rounded-2xl shadow-primary">
+        <main id="experience" className="flex flex-col items-center p-5 w-full max-w-5xl rounded-2xl shadow-primary">
             <h2 className="mb-5">
                 Expe
             </h2>
@@ -12,6 +12,7 @@ export function Experience(){
                 info="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut eveniet provident doloremque eum id excepturi quos suscipit quia obcaecati ullam, voluptatibus adipisci ad omnis voluptas alias debitis eius. Doloremque, quidem."
                 route="/img/proyecto.webp"
                 link="#"
+                AAMMDD="2025-08-20"
                 date="Agosto 2025"
                 >
                 </Job>
@@ -20,6 +21,7 @@ export function Experience(){
                 info="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut eveniet provident doloremque eum id excepturi quos suscipit quia obcaecati ullam, voluptatibus adipisci ad omnis voluptas alias debitis eius. Doloremque, quidem."
                 route="/img/Captura.webp"
                 link="#"
+                AAMMDD="2025-01-13"
                 date="Enero 2025"
                 >
                 </Job>

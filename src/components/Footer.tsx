@@ -22,7 +22,7 @@ export function Footer() {
     }
 
     return (
-        <footer id="contact" className="flex flex-col items-center w-75 sm:w-150 lg:w-220 p-5 mb-4 rounded-2xl shadow-primary">
+        <footer id="contact" className="flex flex-col items-center w-full max-w-5xl p-5 mb-4 rounded-2xl shadow-primary">
         <div className="flex flex-col items-center sm:items-start sm:flex-row gap-5 lg:gap-10">
             <h3 className="pt-4 w-60 sm:w-77 text-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa vero
@@ -30,7 +30,7 @@ export function Footer() {
             </h3>
 
             <form
-            action="https://formsubmit.co/187d575a438535c5f4d8661d1bd328d6"
+            action="https://formsubmit.co/añadircorreo"
             method="POST"
             onSubmit={handleSubmit}
             className="flex basis-2/3 flex-col items-center gap-3 w-70 sm:w-full lg:w-100 p-5">
@@ -74,7 +74,7 @@ export function Footer() {
 
             <button
                 type="submit"
-                className="w-20 p-2 rounded-xl text-sm shadow-button">
+                className="w-20 p-2 rounded-xl text-sm shadow-button active:scale-95">
                 Enviar
             </button>
             </form>

@@ -4,7 +4,7 @@ import { ReactIcon, HTMLIcon, JavaScriptIcon, NodeJsIcon } from "./Pills/ToolsPi
 
 export function ProjectSection(){
     return (
-        <section id="projects" className="flex flex-col items-center p-5 w-75 sm:w-150 lg:w-220 rounded-2xl shadow-primary">
+        <section id="projects" className="flex flex-col items-center p-5 w-full max-w-5xl rounded-2xl shadow-primary">
             <h2 className="mb-4">Projects</h2>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
 

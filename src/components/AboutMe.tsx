@@ -4,9 +4,9 @@ import { X, Instagram } from "./Pills/SocialPills"
 
 export function AboutMe(){
     return(
-        <section id="about" className="flex flex-col items-center gap-x-4 w-75 lg:w-220 sm:w-150 p-5 rounded-2xl shadow-primary">
+        <section id="about" className="flex flex-col items-center gap-x-4 w-full max-w-5xl p-5 rounded-2xl shadow-primary text-pretty">
             <h2 className="mb-4">About me</h2>
-            <article className="flex flex-col-reverse items-center lg:flex-row w-77 sm:w-full p-5 sm:p-0">
+            <article className="flex flex-col-reverse items-center lg:flex-row w-full max-w-4xl">
                 <div>
                     <p className="mb-2">
                         Usar lazy en la etiqueta img. 
@@ -21,7 +21,7 @@ export function AboutMe(){
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magnam <strong> inventore beatae earum nesciunt autem cupiditate ducimus deleniti quia!</strong> illo aliquam possimus numquam provident incidunt asperiores quis voluptatem ex.
                     </p>
                 </div>
-                <img src="/img/icono.png" alt="foto de robert" loading="lazy" className="size-50 lg:size-70 mb-4 mx-4 border rounded-2xl hover:rotate-4 transition duration-500 shadow-primary"/>
+                <img src="/img/icono.png" alt="foto de user" loading="lazy" className="size-50 md:size-70 m-4 rounded-2xl hover:rotate-4 transition duration-500 shadow-primary"/>
             </article>
             <div className="flex-col m-2">
                 <h3 className="text-center"><span>more networks</span></h3>

@@ -23,7 +23,7 @@ export function ToggleTheme () {
     }, [isDark])
 
     return (
-            <button onClick={()=>setIsDark(!isDark)} className="flex items-center cursor-pointer text-gray-800 dark:text-amber-500">
+            <button onClick={()=>setIsDark(!isDark)} className="flex items-center cursor-pointer">
                 {isDark ? <Sun /> : <Moon />}
             </button>
     )
