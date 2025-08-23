@@ -24,7 +24,7 @@ export function AboutMe(){
                 <img src="/img/icono.png" alt="foto de user" loading="lazy" className="size-50 lg:size-70 rounded-2xl hover:rotate-4 transition duration-500 shadow-primary"/>
             </article>
             <div className="flex-col">
-                <h3 className="text-center text-2xl">more networks</h3>
+                <h3 className="text-center text-2xl mt-5">more networks</h3>
                 <ul className="flex flex-wrap justify-center gap-3 m-4">
                     <li><X link="#" name="@Twitter" color="currentColor"></X></li>
                     <li><Instagram link="#" name="@isntagram" color="currentColor"></Instagram></li>

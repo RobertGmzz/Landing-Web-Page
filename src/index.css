@@ -51,7 +51,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 70px;
     margin-inline: 15px;
     min-height: 100dvh;
 }
@@ -103,6 +103,7 @@ section, main, footer{
 }
 
 /*Uso de variables*/
+/*Clases para aplicar sombras diferentes*/
 .shadow-primary{
     box-shadow: 1px 1px 2px var(--shadow-primary);
 }
@@ -112,7 +113,7 @@ section, main, footer{
 }
 
 .shadow-secondary{
-    box-shadow: 1px 1px 8px var(--shadow-secondary) inset;
+    box-shadow: 1px 1px 4px var(--shadow-secondary) inset;
 }
 
 .shadow-button{
@@ -120,7 +121,7 @@ section, main, footer{
     cursor: pointer;
 }
 
-/*Clase para efecto reflejo */
+/* Clase para efecto reflejo */
 .reflex {
     background: var(--color-var);
     color: #FFFFFF;
@@ -154,10 +155,31 @@ section, main, footer{
     to { transform: translateX(100%); }
 }
 
-/*Clases para fuentes especificas*/
+/* Clases para fuentes específicas */
 .different-font{
     font-family: 'Roboto', 'Montserrat', sans-serif;
     font-style: italic;
+    will-change: translate, opacity;
 }
 
+/* Clases para animación de aterrizaje */
+.animation-translate {
+    opacity: 0;
+    animation: landing 0.5s ease-out forwards;
+}
 
+/* Keyframes de animación */
+@keyframes landing {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animation-delay{
+    animation-delay: 0.2s;
+}
