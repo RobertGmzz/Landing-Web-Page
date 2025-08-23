@@ -4,32 +4,32 @@
 
 /* roboto-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/roboto-v48-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/roboto-v48-latin-regular.woff2') format('woff2');
 }
 /* roboto-700 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/roboto-v48-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/roboto-v48-latin-700.woff2') format('woff2');
 }
 /* roboto-700italic - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Roboto';
     font-style: italic;
     font-weight: 700;
-    src: url('../fonts/roboto-v48-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/roboto-v48-latin-700italic.woff2') format('woff2');
 }
 
 html {
     /*Agrega la fuente importada, en caso de no funcionar, carga las demas*/
-    font-family: 'Roboto', sans-serif, 'Montserrat';
+    font-family: 'Roboto', 'Montserrat', sans-serif;
     /*Agrega suavidad al scroll*/
     scroll-behavior: smooth;
 }
@@ -43,7 +43,6 @@ html {
 
 /*Reset de estilos por defecto del body*/
 body{
-    font-family: 'Montserrat';
     box-sizing: border-box;
 }
 
@@ -71,11 +70,6 @@ body{
 /*Variante para dark mode*/
 @custom-variant dark (&:is(.dark *));
 
-/*Estilos de los elementos que reciban la clase active de intersectionObserver*/
-nav a.active{
-    color: red;
-}
-
 /*Margen del scroll-top para links a la misma pagina*/
 section, main, footer{
     scroll-margin-top: 95px;
@@ -96,7 +90,7 @@ section, main, footer{
     --shadow-button: #252525;
 
     /*colores*/
-    --color-var: #48e;
+    --color-var: #37373fb7;
 }
 
 /*Para dark mode*/
@@ -110,24 +104,20 @@ section, main, footer{
 
 /*Uso de variables*/
 .shadow-primary{
-    box-shadow: 1px 1px 4px var(--shadow-primary);
+    box-shadow: 1px 1px 2px var(--shadow-primary);
 }
 
 .shadow-primary:hover{
-    box-shadow: 1px 1px 6px var(--shadow-primary);
+    box-shadow: 1px 1px 4px var(--shadow-primary);
 }
 
 .shadow-secondary{
-    box-shadow: 0 1px 4px var(--shadow-secondary) inset;
+    box-shadow: 1px 1px 8px var(--shadow-secondary) inset;
 }
 
 .shadow-button{
     box-shadow: 1px 1px 2px var(--shadow-button);
     cursor: pointer;
-}
-
-.shadow-button:hover{
-    box-shadow: 1px 1px 3px var(--shadow-button);
 }
 
 /*Clase para efecto reflejo */
@@ -163,4 +153,11 @@ section, main, footer{
 @keyframes shine-sweep {
     to { transform: translateX(100%); }
 }
+
+/*Clases para fuentes especificas*/
+.different-font{
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
 

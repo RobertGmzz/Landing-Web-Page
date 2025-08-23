@@ -29,6 +29,7 @@ export function Header(){
     return (
         <header className="fixed z-10 flex flex-col w-full max-w-260 mt-2 p-4 rounded-2xl bg-[#FFFFFF]/50 dark:bg-[#1B1B1F]/50 backdrop-blur-md shadow-primary">
             <div className="flex justify-between items-center gap-20 sm:gap-50">
+
                 <div className="flex flex-nowrap gap-x-2 text-lime-600 dark:text-lime-300">
                     <CirclePower></CirclePower>
                     <h3>status</h3>
@@ -41,7 +42,6 @@ export function Header(){
                     </button>
                 </nav>
             </div>
-
             <nav className={`${isOpen ? "flex" : "hidden"} sm:flex`}>
                 <ul className="flex flex-wrap justify-center w-full gap-4 mt-5 sm:mt-0">
                     <li><a onClick={handleOnClick} href="#experience">Experience</a></li>

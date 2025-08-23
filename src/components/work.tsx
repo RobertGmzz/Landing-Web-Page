@@ -8,7 +8,6 @@ type props = {
     link: string
 }
 
-
 export function Work({title, description, route, children, link}:props){
     return(
         <article className="flex flex-col gap-4 w-full [@media(min-width:500px)]:w-100 p-4 rounded-2xl shadow-primary">
@@ -16,8 +15,8 @@ export function Work({title, description, route, children, link}:props){
                 <img src={route} alt="captura de proyecto" loading="lazy" className="object-cover transition duration-500 hover:scale-110"/>
             </a>
             <div>
-                <h3>{title}</h3>
-                <p>
+                <h3 className="font-bold text-2xl sm:text-2xl">{title}</h3>
+                <p className="text-sm sm:text-base pt-1.5">
                     {description}
                 </p>
                 <footer>

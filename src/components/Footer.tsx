@@ -23,17 +23,17 @@ export function Footer() {
 
     return (
         <footer id="contact" className="flex flex-col items-center w-full max-w-5xl p-5 mb-4 rounded-2xl shadow-primary">
-        <div className="flex flex-col items-center sm:items-start sm:flex-row gap-5 lg:gap-10">
-            <h3 className="pt-4 w-60 sm:w-77 text-center">
+        <div className="flex flex-col items-center sm:items-start sm:flex-row gap-10 lg:gap-10 mx-10 pt-5">
+            <h3 className="pt-4 w-full text-xl lg:text-2xl text-start text-pretty">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa vero
             quidem dolor.
             </h3>
 
             <form
-            action="https://formsubmit.co/añadircorreo"
+            action="https://formsubmit.co/uncorreovalido"
             method="POST"
             onSubmit={handleSubmit}
-            className="flex basis-2/3 flex-col items-center gap-3 w-70 sm:w-full lg:w-100 p-5">
+            className="flex flex-col items-center gap-3 w-full">
 
             {/* Anti-spam */} 
             <input type="text" name="_honey" style={{ display: "none" }} />
@@ -44,14 +44,14 @@ export function Footer() {
                 value="Nuevo mensaje desde el formulario"
             />
 
-            <h2 className="pb-2 text-center">Contact me</h2>
+            <h2 className="pb-2 text-center text-xl lg:text-2xl">Contact me</h2>
 
             <input
                 type="text"
                 name="name"
                 placeholder="Tu nombre..."
                 required
-                className="p-2 w-full  rounded-xl outline-0 shadow-secondary"
+                className="p-2 w-full rounded-xl outline-0 shadow-secondary"
             />
             <input
                 type="email"
