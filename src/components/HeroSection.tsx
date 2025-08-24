@@ -1,6 +1,18 @@
 import { GitHub, LinkedIn } from "./Pills/SocialPills"
-/*orden de propiedades para los enlaces de redes sociales*/
-/*link - name - color*/
+
+/* Propiedades que debe recibir Los componentes "SocialPills" */
+/*
+link(string - enlace a perfil) -
+name(string - nombre de usuario de perfil) -
+color(string - color de icono)
+*/
+
+/* Properties that the "SocialPills" components should receive */
+/*
+link(string - profile link) -
+name(string - profile username) -
+color(string - icon color)
+*/
 
 export function Hero(){
     return (

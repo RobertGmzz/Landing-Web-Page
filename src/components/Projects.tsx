@@ -1,21 +1,21 @@
 import { Work } from "./work"
 import { ReactIcon, HTMLIcon, JavaScriptIcon, NodeJsIcon } from "./Pills/ToolsPills"
 
-/* Propiedades que debe recibir Job -en orden- */
+/* Propiedades que debe recibir "Work" */
 /*
 title(string - titulo descriptivo) - 
 info(string - pequeña descripcion directa sobre el proyecto) - 
 route(string - ruta de la imagen) - 
-children(recibe elementos de tipo ReactNode jsx, tsx(componentes react) o html) - 
+children(recibe elementos de tipo ReactElement jsx, tsx(componentes react) o html) - 
 link(string - enlace a la pagina del proyecto)
 */
 
-/* Properties that Job should receive -in order- */
+/* Properties that "Work" should receive */
 /*
 title(string - descriptive title) - 
 info(string - short direct description about the project) - 
 route(string - image path) - 
-children(receives elements of type ReactNode jsx, tsx (react components), or html) - 
+children(receives elements of type ReactElement jsx, tsx (react components), or html) - 
 link(string - link to the project page)
 */
 

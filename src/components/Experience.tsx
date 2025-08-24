@@ -1,6 +1,6 @@
 import { Job } from "./Job"
 
-/* PROPIEDADES QUE DEBE RECIBIR "Job" - (en orden)*/
+/* PROPIEDADES QUE DEBE RECIBIR "Job"*/
 /*
 title(string - titulo descriptivo) - 
 info(string - pequeña descripcion directa sobre el proyecto) - 
@@ -12,7 +12,7 @@ load(solo recibe los datos "lazy" de carga diferida, "eager" de carga instantane
 */
 
 
-/*PROPERTIES THAT "Job" SHOULD RECIVE - (in order)*/
+/*PROPERTIES THAT "Job" SHOULD RECIVE*/
 /*title(string - descriptive title) - 
 info(string - short direct description about the project) - 
 route(string - image path) - 
