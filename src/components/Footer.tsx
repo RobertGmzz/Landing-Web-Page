@@ -37,7 +37,7 @@ export function Footer() {
     }
 
     return (
-        <footer id="contact" className="flex flex-col items-center w-full max-w-5xl p-5 mb-4 rounded-2xl shadow-primary">
+        <footer id="contact" className="flex flex-col md:flex-row-reverse items-center w-full max-w-5xl p-5 mb-4 rounded-2xl shadow-primary">
             <form
                 action="https://formsubmit.co/uncorreovalido"
                 method="POST"
@@ -73,6 +73,7 @@ export function Footer() {
                     name="message"
                     placeholder="Your message..."
                     required
+                    maxLength={300}
                     className="p-2 w-full min-h-30 rounded-xl outline-0 bg-[#f0f0f0] dark:bg-[#2a2a30b7] shadow-secondary"
                 ></textarea>
 
