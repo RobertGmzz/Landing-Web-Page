@@ -17,7 +17,7 @@ export function AboutMe(){
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magnam <span className="different-font"> inventore beatae earum nesciunt autem cupiditate ducimus deleniti quia!</span> illo aliquam possimus numquam provident incidunt asperiores quis voluptatem ex.
                     </p>
                 </div>
-                <img src="/img/icono.png" alt="foto de user" loading="lazy" className="size-50 lg:size-70 rounded-2xl hover:rotate-4 transition duration-500 shadow-primary"/>
+                <img src="/img/foto.webp" alt="foto de user" loading="lazy" className="size-50 lg:size-70 rounded-2xl hover:rotate-4 transition duration-500 shadow-primary"/>
             </article>
         </section>
     )

@@ -26,19 +26,19 @@ export function ProjectSection(){
             <h2 className="mb-5 text-3xl">Projects section</h2>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 text-pretty">
 
-                    <Work title="Project 1" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque aliquid." route="/img/proyecto.webp" link="#">
+                    <Work title="Project 1" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque aliquid." route="/img/example3.webp" link="#">
                         <ReactIcon></ReactIcon>
                         <HTMLIcon></HTMLIcon>
                         <NodeJsIcon></NodeJsIcon>
                         <JavaScriptIcon></JavaScriptIcon>
                     </Work>
 
-                    <Work title="Project 2" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque aliquid." route="/img/proyecto.webp" link="#">
+                    <Work title="Project 2" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque aliquid." route="/img/example2.webp" link="#">
                         <NodeJsIcon></NodeJsIcon>
                         <JavaScriptIcon></JavaScriptIcon>
                     </Work>
 
-                    <Work title="Project 3" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque aliquid." route="/img/proyecto.webp" link="#">
+                    <Work title="Project 3" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque aliquid." route="/img/example1.webp" link="#">
                         <ReactIcon></ReactIcon>
                         <HTMLIcon></HTMLIcon>
                         <NodeJsIcon></NodeJsIcon>
